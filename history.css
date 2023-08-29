@@ -189,3 +189,20 @@ nav ul li:hover > ul { display: block; }
     place-items: center;
     background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
 }
+@media screen and (max-width: 425px) {
+
+    header nav ul li a {
+        padding: 5px;
+        margin-right: 3rem;
+    }
+    header nav ul li {
+        margin-left: 2rem;
+    }
+    .heading {
+        margin-top: 12rem;
+    }
+    .book img {
+        width: 80%;
+    }
+
+}
