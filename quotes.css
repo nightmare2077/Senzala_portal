@@ -160,7 +160,7 @@ nav ul li:hover > ul { display: block; }
     display: flex;
 }
 .box-container .info {
-    height: 12rem;
+    height: auto;
     margin-bottom: 4rem;
     background-color: #ccc;
     max-width: 30rem;
