@@ -129,6 +129,7 @@ nav ul li:hover > ul { display: block; }
     border-radius: 5px;
     height: 520px;
     overflow-y: scroll;
+    margin-bottom: 2rem;
 }
 .container .video-list::-webkit-scrollbar {
     width: 7px;
