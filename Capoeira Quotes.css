@@ -466,7 +466,7 @@ header .navbar ul li a:hover {
     }
 
     html {
-        font-size: 55%;
+        font-size: 85%;
     }
     header {
         padding: 1.5rem 2rem;
@@ -481,6 +481,9 @@ header .navbar ul li a:hover {
 
     .menu-btn {
         display: inline-block;
+    }
+    .menu-btn ul li {
+        font-size: 3rem;
     }
     header nav ul li {
         display: none;
@@ -547,7 +550,7 @@ header .navbar ul li a:hover {
 }
 @media (max-width:375px) {
     .basic .row img {
-        width: 70%;
+        width: 305px;
     }
     .basic .row .content {
         width: 200%;
@@ -593,6 +596,7 @@ header .navbar ul li a:hover {
         width: 255px;
     }
 }
+
 
 
 
