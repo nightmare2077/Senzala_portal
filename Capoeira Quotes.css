@@ -52,24 +52,26 @@ header {
     border-bottom: var(--border);
     z-index: 1000;
 }
-
-header nav ul li {
+header .navbar {
+    margin-right: 3rem;
+}
+header .navbar ul li {
     position: relative;
     float: left;
 }
-header nav ul li a {
+header .navbar ul li a {
     padding: 15px;
     color: white;
     font-weight: 200;
     font-size: 1.3rem;
-    margin-left: 45px;
+    margin-left: 60px;
     transition: color 0.3s linear;
     border-bottom: 0.1rem solid var(--main-color);
 }
-header nav ul li a:hover {
+header .navbar ul li a:hover {
     color: goldenrod;
 }
-nav ul li ul {
+.navbar ul li ul {
     position: absolute;
     left: 40px;
     width: 180px;
@@ -77,16 +79,21 @@ nav ul li ul {
     background-color: darkred;
     display: none;
 }
-nav ul li ul li {
+.navbar ul li ul li {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: block;
 }
-nav ul li ul li:hover {
+.navbar ul li ul li:hover {
     background-color: rgb(49, 3, 3);
     color: darkred;
 }
-nav ul li:hover > ul { display: block; }
+.navbar ul li:hover > ul { display: block; }
+
+.menu-btn {
+    display: none;
+}
+
 
 
 .home {
@@ -174,6 +181,11 @@ nav ul li:hover > ul { display: block; }
     line-height: 1.8;
     font-weight: 200;
 }
+.basic .row img {
+    height: auto; 
+    max-width: 350px;
+}
+
 .row .btn {
     background-color: #be9965;
     ;
@@ -203,6 +215,10 @@ nav ul li:hover > ul { display: block; }
     background: var(--black);
     margin-left: 4rem;
     margin-right: 4rem;
+}
+.handbook .hand img {
+    height: auto; 
+    width: 350px;
 }
 .handbook .hand .content {
     width: 50%;
@@ -295,6 +311,10 @@ nav ul li:hover > ul { display: block; }
     margin-left: 4rem;
     margin-right: 4rem;
 }
+.archi .arc img {
+    height: auto;
+    width: 350px;
+}
 .archi .arc .content {
     width: 50%;
     text-align: left;
@@ -343,6 +363,7 @@ nav ul li:hover > ul { display: block; }
 }
 .contact .cont .map {
     flex: 1 1 45rem;
+    height: 600px;
     width: 100%;
     object-fit: cover;
     margin-right: 50%;
@@ -436,6 +457,141 @@ nav ul li:hover > ul { display: block; }
 }
 .footer .credit span {
     color: #cfae81;
+}
+@media (max-width:991px){
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1.5rem 2rem;
+    }
+}
+@media (max-width:1176px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+    header nav ul li {
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+    .home .content p {
+        font-size: 1.5rem;
+    }
+    .basic .row .image img{
+        max-width: 350px;
+    }
+}
+
+@media (max-width:425px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content {
+        margin-right: 3rem;
+    }
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+    .home .content p {
+        font-size: 1.5rem;
+    }
+
+    .basic .row .content {
+        width: 200%;
+        margin: 1.5rem;
+        text-align: justify;
+    }
+    .handbook .hand .content {
+        width: 200%;
+        margin: 1.5rem;
+        text-align: justify;
+    }
+    .archi .arc .content {
+        width: 200%;
+        margin: 1.5rem;
+        text-align: justify;
+    }
+    .contact .cont .map {
+        height: 600px;
+        width: 50%;
+        object-fit: cover;
+        margin-right: 50%;
+    }
+    .footer {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width:375px) {
+    .basic .row img {
+        width: 70%;
+    }
+    .basic .row .content {
+        width: 200%;
+        margin: 1.5rem;
+        text-align: justify;
+    }
+    .handbook .hand img {
+        width: 305px;
+    }
+    .handbook .hand .content {
+        width: 200%;
+        margin: 1.5rem;
+        text-align: justify;
+    }
+    .archi .arc img {
+        width: 305px;
+        height: auto;
+    }
+    .archi .arc .content {
+        width: 200%;
+        margin: 1.5rem;
+        text-align: justify;
+    }
+    .contact .cont .map {
+        height: 600px;
+        width: 50%;
+        object-fit: cover;
+        margin-right: 50%;
+    }
+    .footer {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width:320px) {
+    .basic .row img {
+        width: 255px;
+    }
+    .handbook .hand img {
+        width: 255px;
+    }
+    .archi .arc img {
+        width: 255px;
+    }
 }
 
 
